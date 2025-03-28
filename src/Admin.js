@@ -6,7 +6,7 @@ const Admin = () => {
   const [message, setMessage] = useState('');
 
   const handleAddItem = (item) => {
-    axios.post('http://localhost:5000/api/items', item)
+    axios.post('http://localhost:1000/api/items', item)
       .then(res => setMessage('Item added successfully!'))
       .catch(err => setMessage('Error adding item'));
   };
